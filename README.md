@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+2020-03-30
 
 ### Project Title
-Replace the Project Title
+Bikeshare Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project guides a user through a series of interactive questions to produce descriptive statistics about some bikeshare data in three US cities.
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Template borrowed from https://github.com/udacity/pdsnd_github
