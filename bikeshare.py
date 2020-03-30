@@ -9,8 +9,7 @@ import numpy as np
 # map city to file name
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv',
-            '': '*.csv'}
+              'washington': 'washington.csv'}
 
 # get path to data
 
@@ -37,7 +36,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington, all)
     # warn for selection all due to data size
 
-    city = input('Which city would you like to select? You may choose Chicago, New York, or Washington, or hit enter to select all.\n Warning! Selecting all will result in longer processing times: ').lower()
+    city = input('Which city would you like to select? You may choose Chicago, New York, or Washington').lower()
     print(city)
 
     # check input validity
@@ -230,9 +229,11 @@ def user_stats(df):
         earliest_birth_year = int(df['Birth Year'].min())
         latest_birth_year = int(df['Birth Year'].max())
         most_common_birth_year = int(df['Birth Year'].mode()[0])
+        age = 2020 - most_common_birth_year
         print('The earliest birth year is {}\n'.format(earliest_birth_year),
               '\nThe most recent birth year is {}\n'.format(latest_birth_year),
-              '\nThe most common birth year is {}\n'.format(most_common_birth_year))
+              '\nThe most common birth year is {}\n'.format(most_common_birth_year),
+              '\nOn average, riders are {} years old'.format(age))
     else:
         print('You do not have birth year information in your data.')
 
