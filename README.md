@@ -12,3 +12,6 @@ bikeshare.py
 
 ### Credits
 Template borrowed from https://github.com/udacity/pdsnd_github
+
+### Contact
+Email julianapepp@yahoo.com for questions
